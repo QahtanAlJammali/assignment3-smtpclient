@@ -38,7 +38,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     # Fill in start
     rcptTo = "RCPT TO:<an_awesome_TA@nyu.edu>\r\n"
     clientSocket.send(rcptTo.encode())
-    recv3 = clientSocket.recv(1024.decode()
+    recv3 = clientSocket.recv(1024).decode()
     # Fill in end
 
     # Send DATA command and handle server response.
